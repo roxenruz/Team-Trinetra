@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Trinetra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+      overflow-x: hidden;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: linear-gradient(270deg, #ff6ec4, #7873f5, #4facfe, #43e97b);
+      background-size: 800% 800%;
+      animation: gradientMove 15s ease infinite;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+      animation: fadeInDown 1.2s ease-in-out;
+    }
+
+    .names-container {
+      display: flex;
+      flex-direction: column; /* stacked vertically */
+      align-items: center;   /* center horizontally */
+      gap: 25px;
+    }
+
+    .name-card {
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+      padding: 20px 60px;
+      border-radius: 18px;
+      width: 280px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+      transition: transform 0.4s, background 0.4s, color 0.4s;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .name {
+      font-size: 26px;
+      font-family: '', cursive;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 8px;
+      color: #444;
+      font-family: '', sans-serif;
+    }
+
+    .name-card:nth-child(1) { animation-delay: 0.3s; }
+    .name-card:nth-child(2) { animation-delay: 0.6s; }
+    .name-card:nth-child(3) { animation-delay: 0.9s; }
+    .name-card:nth-child(4) { animation-delay: 1.2s; }
+    .name-card:nth-child(5) { animation-delay: 1.5s; }
+    .name-card:nth-child(6) { animation-delay: 1.8s; }
+
+    .name-card:hover {
+      transform: scale(1.1) rotate(-2deg);
+      background: #ffcc70;
+      color: #111;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <h1> Team Trinetra </h1>
+  <div class="names-container">
+    <div class="name-card">
+      <div class="name">Debaprasad Sarkar</div>
+      <div class="title">Team Leader(MIE)</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Rahul Amerchetti</div>
+      <div class="title">CSE(Software)</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Ruth Jeso Johnson</div>
+      <div class="title">CSE(Software)</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Rao Rakshita Singh</div>
+      <div class="title">CSE(Software)</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Anurag Mishra</div>
+      <div class="title">ECE(Hardware IOT)</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Dinesh Singh Parmar</div>
+      <div class="title">BCA(Software)</div>
+    </div>
+  </div>
+</body>
+</html>
